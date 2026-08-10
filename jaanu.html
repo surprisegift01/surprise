@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish for Pinki 🎂</title>
+    <!-- Google Fonts for unique styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: url('back.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Circular Audio Button */
+        .audio-container {
+            margin: 20px auto;
+        }
+
+        .play-btn {
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .play-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 20px solid #ff0055;
+            margin-left: 5px;
+        }
+
+        /* Title */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #ffffff;
+            font-size: 50px;
+            text-shadow: 0 0 15px #ffffff;
+            margin-top: 10px;
+        }
+
+        /* Shayari Message (First) */
+        p.message {
+            font-size: 20px;
+            color: #ffffff;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.8;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #ffffff;
+        }
+
+        /* Photo Gallery (Second) */
+        .gallery {
+            margin: 25px auto;
+        }
+
+        img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 15px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+        /* Signature (Last) */
+        p.signature {
+            font-size: 22px;
+            color: #ffffff;
+            font-weight: 600;
+            font-style: italic;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto 40px auto;
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        /* Floating Balloons Animation */
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ff0055;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -100px;
+            animation: floatUp 6s infinite ease-in;
+            z-index: -1;
+        }
+        .balloon::before {
+            content: "▲";
+            font-size: 10px;
+            color: #ff0055;
+            position: absolute;
+            bottom: -8px;
+            left: 20px;
+        }
+        
+        .b1 { left: 15%; animation-duration: 5s; background-color: #ff0055; }
+        .b1::before { color: #ff0055; }
+        .b2 { left: 35%; animation-duration: 7s; animation-delay: 1s; background-color: #00ffaa; }
+        .b2::before { color: #00ffaa; }
+        .b3 { left: 55%; animation-duration: 6s; animation-delay: 2s; background-color: #ffe600; }
+        .b3::before { color: #ffe600; }
+        .b4 { left: 75%; animation-duration: 8s; animation-delay: 0.5s; background-color: #0088ff; }
+        .b4::before { color: #0088ff; }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-120vh) rotate(15deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Balloons -->
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+
+    <!-- Circular Play Button -->
+    <div class="audio-container">
+        <button class="play-btn" onclick="toggleAudio()">
+            <div class="play-icon" id="icon"></div>
+        </button>
+        <audio id="bg-music" src="sk.mp3"></audio>
+    </div>
+
+    <h1>Meri Pyari Pinki ko Janmdin ki Bahut Bahut Badhai! 🎉❤️🎉</h1>
+
+    <!-- 1. Shayari/Message in Hindi/English script -->
+    <p class="message">
+        Chand se zyada khoobsurat ho tum,<br>
+        Meri zindagi ki sabse pehli zaroorat ho tum.<br>
+        Har raah aasaan ho jaati hai tumhare saath,<br>
+        Kyunki meri sabse badi taaqat ho tum.<br><br>
+        Happy Birthday, my lovely Pinki!
+    </p>
+
+    <!-- 2. Photo -->
+    <div class="gallery">
+        <img src="pinki1 (1).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (2).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (3).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (4).jpeg" alt="Pinki Photo">
+        <img src="pinki1 (5).jpeg" alt="Pinki Photo">
+        <img src="pinki1 (6).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (7).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (8).jpeg" alt="Pinki Photo"> 
+        <img src="pinki1 (9).jpeg" alt="Pinki Photo">
+        <img src="pinki1 (10).jpeg" alt="Pinki Photo">
+        <img src="pinki1 (11).jpeg" alt="Pinki Photo">
+    </div>
+
+    <!-- 3. Signature (At the very end) -->
+    <p class="signature">~ Tumhara Shankar</p>
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById("bg-music");
+            var icon = document.getElementById("icon");
+            
+            if (audio.paused) {
+                audio.play();
+                icon.style.borderLeft = "none";
+                icon.style.width = "16px";
+                icon.style.height = "20px";
+                icon.style.borderLeft = "6px solid #ff0055";
+                icon.style.borderRight = "6px solid #ff0055";
+                icon.style.marginLeft = "0";
+            } else {
+                audio.pause();
+                icon.style.width = "0";
+                icon.style.height = "0";
+                icon.style.borderRight = "none";
+                icon.style.borderTop = "12px solid transparent";
+                icon.style.borderbottom = "12px solid transparent";
+                icon.style.borderLeft = "20px solid #ff0055";
+                icon.style.marginLeft = "5px";
+            }
+        }
+    </script>
+
+</body>
+</html>
